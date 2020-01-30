@@ -4,7 +4,7 @@ Extensão desenvolvida para adicionar ao TSheets web os horários em que o dia s
 
 ## Partes adicionadas 
 
-    ![time_clock](https://github.com/magalhaescarlos/super_tsheets/blob/master/time_clock.png)
+ ![time_clock](https://github.com/magalhaescarlos/super_tsheets/blob/master/time_clock.png)
 
 ### Completion Time (day)
 Hora do dia em que você terminará as horas necessárias para o dia (por padrão 8h)
@@ -14,7 +14,7 @@ Hora do dia em que você terminará as horas necessárias para a semana (5 vezes
 
 ## Painel da extensão
 
-    ![painel](https://github.com/magalhaescarlos/super_tsheets/blob/master/extension_panel.png)
+![painel_extensao](https://github.com/magalhaescarlos/super_tsheets/blob/master/extension_panel.png)
 
 ### Para alterar a quantidade de horas padrão:
 
