@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+		Super TSheets
+	</title>
+    <script src="popup.js"></script>
+    <style>
+        #timeinput{
+            display: none;
+        }
+        .active{
+            display: block!important;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <h1> Super TSheets </h1> 
+    <div>
+        <iframe id="tsheetsFrame" height="500px" frameborder="no" src="https://app.tsheets.com/app/">
+
+        </iframe>
+    </div>
+
+    <div id="timeinput" class="">
+        <form>
+            <!--<label for="hoursInput">Quantas horas você faz por dia</label>-->
+            <input type="text" id="hoursInput" placeholder="Quantas horas você faz por dia?" ></input>
+            <button id="updateBtn"> Atualizar </button>
+        </form>
+    </div>
+
+    <button id="toggleEdit">Editar horas</button>
+    <a href="https://dp6.tsheets.com/">Ir para o tsheets</a>
+
+</body>
+
+</html>

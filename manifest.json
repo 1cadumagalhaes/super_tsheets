@@ -1,0 +1,23 @@
+{
+    "name": "Super TSheets",
+    "version": "1.0",
+    "description": "Extensão para ajudar a lidar com o tsheets",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": {
+            "32": "clock-icon.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Super TSheets"
+     },
+     "permissions": [ "activeTab", "storage"],
+     "content_scripts": [
+         {
+             "matches":[
+                 "https://dp6.tsheets.com/*",
+                 "http://dp6.tsheets.com/*"
+             ],
+             "js": ["content.js"]
+         }
+     ]
+  }
