@@ -4,7 +4,7 @@ Extensão desenvolvida para adicionar ao TSheets web os horários em que o dia s
 
 ## Partes adicionadas 
 
-![time_clock](time_clock.png)
+    ![time_clock](https://github.com/magalhaescarlos/super_tsheets/blob/master/time_clock.png)
 
 ### Completion Time (day)
 Hora do dia em que você terminará as horas necessárias para o dia (por padrão 8h)
@@ -14,17 +14,17 @@ Hora do dia em que você terminará as horas necessárias para a semana (5 vezes
 
 ## Painel da extensão
 
-![painel](extension_panel.png)
+    ![painel](https://github.com/magalhaescarlos/super_tsheets/blob/master/extension_panel.png)
 
 ### Para alterar a quantidade de horas padrão:
 
 1. Primeiro, pressione o botão "Editar horas"
    
-![editar_horas](btn_edit.png)
+    ![editar_horas](https://github.com/magalhaescarlos/super_tsheets/blob/master/btn_edit.png)
 
 1. Aparecerá uma caixa de texto com a quantidade de horas padrão. Basta editar e apertar "Atualizar"
 
-![atualizar_horas](update.png)
+    ![atualizar_horas](https://github.com/magalhaescarlos/super_tsheets/blob/master/update.png)
 
 
 
@@ -34,7 +34,10 @@ Hora do dia em que você terminará as horas necessárias para a semana (5 vezes
 2. Extrair o arquivo para um diretório, ex: "super_tsheets".
 3. Navegar para [chrome://extensions](chrome://extensions)
 4. Pressionar "Load unpacked" ou o equivalente:
-![carregar_extensao](chrome_install.png)
-5. Selecionar a pasta para qual extraiu o conteúdo 
-6. Agora a extensão deve estar instalada
-   ![icone](chrome_icon.png)
+
+
+    ![carregar_extensao](https://github.com/magalhaescarlos/super_tsheets/blob/master/chrome_install.png)
+1. Selecionar a pasta para qual extraiu o conteúdo 
+2. Agora a extensão deve estar instalada
+
+     ![icone](https://github.com/magalhaescarlos/super_tsheets/blob/master/chrome_icon.png)
