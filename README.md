@@ -28,4 +28,13 @@ Hora do dia em que você terminará as horas necessárias para a semana (5 vezes
 
 
 
+## Para instalar
+1. Baixar o .zip da extensão ([aqui](https://github.com/magalhaescarlos/super_tsheets/archive/master.zip) ou no botão "Download ZIP")
 
+2. Extrair o arquivo para um diretório, ex: "super_tsheets".
+3. Navegar para [chrome://extensions](chrome://extensions)
+4. Pressionar "Load unpacked" ou o equivalente:
+![carregar_extensao](chrome_install.png)
+5. Selecionar a pasta para qual extraiu o conteúdo 
+6. Agora a extensão deve estar instalada
+   ![icone](chrome_icon.png)
