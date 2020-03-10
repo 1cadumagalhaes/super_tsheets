@@ -22,7 +22,8 @@ function receiveInput(horas){
 
 function calculoSemanal(TOTAL_DIA) {
     var semanaFeito = new Date(); //Quantas horas já fez na semana
-    semanaFeito.setHours.apply(semanaFeito, document.getElementById("timecard_week_total").innerText.split(":").concat([0]));
+    var horas = document.getElementById("timecard_week_total").innerText;
+    semanaFeito.setHours.apply(semanaFeito, /-/.test(horas) ? horas.split(":").concat([0]):[0,0,0]);
     var semanaCompleta = new Date();
     semanaCompleta.setHours(
         semanaCompleta.getHours() + (semanaCompleta.getDay() * TOTAL_DIA) - semanaFeito.getHours(),
@@ -35,7 +36,8 @@ function calculoSemanal(TOTAL_DIA) {
 
 function calculoDiario(TOTAL_DIA) {
     var diaFeito = new Date(); //Quantas horas já fez na semana
-    diaFeito.setHours.apply(diaFeito, document.getElementById("timecard_day_total").innerText.split(":").concat([0]));
+    var horas = document.getElementById("timecard_day_total").innerText
+    diaFeito.setHours.apply(diaFeito, /-/.test(horas) ? horas.split(":").concat([0]):[0,0,0] );
     var diaCompleto = new Date();
     diaCompleto.setHours(
         diaCompleto.getHours() + TOTAL_DIA - diaFeito.getHours(),
