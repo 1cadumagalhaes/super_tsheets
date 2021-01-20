@@ -3,9 +3,6 @@
     "version": "2.0",
     "description": "Extensão para ajudar a lidar com o tsheets",
     "manifest_version": 2,
-    "host_permissions": [
-        "https://tsheets.intuit.com"
-    ],
     "browser_action": {
         "default_icon": {
             "32": "clock-icon.png"
