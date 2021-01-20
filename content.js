@@ -2,28 +2,28 @@
 
 console.log("Super TSheets Loaded");
 
-var TOTAL_DIA = 8;
+var TOTAL_DIA = 8, FERIADOS = 0;
 
 chrome.storage.sync.get('horas', function (items) {
     console.log("LOADED: " + items['horas']);
 
     if (!items['horas']) {
-        chrome.storage.sync.set({'horas':TOTAL_DIA});
+        chrome.storage.sync.set({ 'horas': TOTAL_DIA });
     }
     else {
         TOTAL_DIA = Number(items['horas']);
     }
 });
 
-function receiveInput(horas){
-	TOTAL_DIA = horas;
+function receiveInput(horas) {
+    TOTAL_DIA = horas;
 }
 
 
 function calculoSemanal(TOTAL_DIA) {
     var semanaFeito = new Date(); //Quantas horas já fez na semana
     var horas = document.getElementById("timecard_week_total").innerText;
-    semanaFeito.setHours.apply(semanaFeito, /\d{1,2}:\d{2}/.test(horas) ? horas.split(":").concat([0]):[0,0,0]);
+    semanaFeito.setHours.apply(semanaFeito, /\d{1,2}:\d{2}/.test(horas) ? horas.split(":").concat([0]) : [0, 0, 0]);
     var semanaCompleta = new Date();
     semanaCompleta.setHours(
         semanaCompleta.getHours() + (semanaCompleta.getDay() * TOTAL_DIA) - semanaFeito.getHours(),
@@ -37,7 +37,7 @@ function calculoSemanal(TOTAL_DIA) {
 function calculoDiario(TOTAL_DIA) {
     var diaFeito = new Date(); //Quantas horas já fez na semana
     var horas = document.getElementById("timecard_day_total").innerText
-    diaFeito.setHours.apply(diaFeito, /\d{1,2}:\d{2}/.test(horas) ? horas.split(":").concat([0]):[0,0,0] );
+    diaFeito.setHours.apply(diaFeito, /\d{1,2}:\d{2}/.test(horas) ? horas.split(":").concat([0]) : [0, 0, 0]);
     var diaCompleto = new Date();
     diaCompleto.setHours(
         diaCompleto.getHours() + TOTAL_DIA - diaFeito.getHours(),
@@ -47,7 +47,7 @@ function calculoDiario(TOTAL_DIA) {
     return horaDia;
 }
 
-function executaCalculos(TOTAL_DIA){
+function executaCalculos(TOTAL_DIA) {
     if (document.getElementById("completion_div") == null) {
         clearInterval(update);
         return;
@@ -66,19 +66,19 @@ function insertCompletionTimes() {
         var mydiv = document.createElement('div');
         mydiv.setAttribute('id', 'completion_div')
         var estrutura = '<dl id="finals" style="column-count:2;" class="totals">'
-                    + '<dt aria-hidden="true">COMPLETION TIME (DAY)</dt>'
-                    + '<dd id="completion_time_day"> '
-                    + '<span aria-hidden="true"> 00:00</span>'
-                    + '</dd>'
-                    + '<dt aria-hidden="true">COMPLETION TIME (WEEK)</dt>'
-                    + '<dd id="completion_time_week"> '
-                    + '<span aria-hidden="true"> 00:00</span>'
-                    + '</dd>'
-                    + '</dl>';
+            + '<dt aria-hidden="true">COMPLETION TIME (DAY)</dt>'
+            + '<dd id="completion_time_day"> '
+            + '<span aria-hidden="true"> 00:00</span>'
+            + '</dd>'
+            + '<dt aria-hidden="true">COMPLETION TIME (WEEK)</dt>'
+            + '<dd id="completion_time_week"> '
+            + '<span aria-hidden="true"> 00:00</span>'
+            + '</dd>'
+            + '</dl>';
         mydiv.innerHTML = estrutura;
-        el.parentNode.insertBefore(mydiv,  el.nextElementSibling);
+        el.parentNode.insertBefore(mydiv, el.nextElementSibling);
 
-        var update = setInterval(executaCalculos(TOTAL_DIA),100);
+        var update = setInterval(executaCalculos(TOTAL_DIA), 100);
     }
 }
 

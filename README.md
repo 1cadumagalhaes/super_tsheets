@@ -14,7 +14,10 @@ Hora do dia em que você terminará as horas necessárias para a semana (5 vezes
 
 ## Painel da extensão
 
+Com a mudança do tsheets para intuit, o iframe parou de funcionar. Então agora integramos com o nosso banco de horas interno.
+
 ![painel_extensao](https://github.com/magalhaescarlos/super_tsheets/blob/master/extension_panel.png)
+
 
 ### Para alterar a quantidade de horas padrão:
 
