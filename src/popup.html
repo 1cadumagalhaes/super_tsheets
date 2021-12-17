@@ -32,7 +32,7 @@
         }
 
         .button {
-            margin: 10px auto;
+            margin: 5px auto;
             border-width: 0;
             outline: none;
             border-radius: 2px;
@@ -64,7 +64,7 @@
         <iframe is="x-frame-bypass" src="https://tsheets.intuit.com/app?embedded=true"> </iframe>
     </div>-->
     <div>
-        <iframe src="https://horas.dp6.io" frameborder="0" height="400" width="400" id="horasdp6"></iframe>
+        <iframe src="https://horas.dp6.io" frameborder="0" height="450" width="450" id="horasdp6"></iframe>
     </div>
 
     <div id="timeinput" class="">
@@ -86,10 +86,14 @@
             <button class="button" id="updateBtn"> Atualizar </button>
         </form>
     </div>
-
-    <button id="toggleEdit" class="button">Editar horas</button>
-    <a href="https://dp6.tsheets.com/">Ir para o tsheets</a>
-    <a href="http://horas.dp6.io">Ir para o banco de horas</a>
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-around; width: 90%;">
+        <button id="toggleEdit" class="button" style="margin-left: 40px;
+        ">Editar horas</button>
+        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+            <a href="https://dp6.tsheets.com/">Ir para o tsheets</a>
+            <a href="http://horas.dp6.io">Ir para o banco de horas</a>
+        </div>
+    </div>
 </body>
 
 </html>
