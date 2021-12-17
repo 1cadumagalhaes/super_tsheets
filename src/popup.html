@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Super TSheets
+    </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <script src="popup.js"></script>
+    <style>
+        #timeinput {
+            display: none;
+        }
+
+        .active {
+            display: block !important;
+        }
+
+        body {
+            font-family: Ubuntu;
+            background-color: #091923;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body a {
+            color: white;
+        }
+
+        .button {
+            margin: 10px auto;
+            border-width: 0;
+            outline: none;
+            border-radius: 2px;
+            background-color: #00c0d9;
+            color: white;
+            padding: 12px 24px;
+            appearance: button;
+            text-decoration: none;
+            pointer-events: fill !important;
+        }
+
+        .button:hover {
+            background-color: #14e0f8;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Super TSheets </h1>
+
+    <!--<div>
+        <iframe is="x-frame-bypass" src="https://tsheets.intuit.com/app?embedded=true"> </iframe>
+    </div>-->
+    <div>
+        <iframe src="https://horas.dp6.io" frameborder="0" height="400" width="400" id="horasdp6"></iframe>
+    </div>
+
+    <div id="timeinput" class="">
+        <form>
+            <br>
+            <label for="hoursInput"></label>
+            <div>
+                <input type="text" name="horas" id="hoursOutput" disabled style="width: 10px;" value="8"> horas por dia
+            </div>
+            <div>
+                6 <input type="range" id="hoursInput" placeholder="Quantas horas você faz por dia?" min="6" max="8"
+                    value='8'></input>
+                8
+            </div>
+
+            <!--<label for"feriados"> Tem algum feriado ou folga nessa semana? </label>
+            <input id="feriados" type="number" style="width: 25px;" min=0 max=5 value=0>
+            <br>-->
+            <button class="button" id="updateBtn"> Atualizar </button>
+        </form>
+    </div>
+
+    <button id="toggleEdit" class="button">Editar horas</button>
+    <a href="https://dp6.tsheets.com/">Ir para o tsheets</a>
+    <a href="http://horas.dp6.io">Ir para o banco de horas</a>
+</body>
+
+</html>
