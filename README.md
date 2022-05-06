@@ -32,7 +32,7 @@ Com a mudança do tsheets para intuit, o iframe parou de funcionar. Então agora
 
 
 ## Para instalar
-1. Baixar o .zip da extensão ([aqui](https://github.com/1cadumagalhaes/super_tsheets/releases/download/v3.0.0-beta/super_tsheets.zip) ou em releases)
+1. Baixar o .zip da extensão ([aqui](https://github.com/1cadumagalhaes/super_tsheets/releases/download/v4.0.0/super_tsheets.zip) ou em releases)
 2. Extrair o arquivo para um diretório, ex: "super_tsheets".
 3. Navegar para [chrome://extensions](chrome://extensions)
 4. Ativar o modo de desenvolvedor do chrome
